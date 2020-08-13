@@ -23,7 +23,7 @@ class School
   end   
   
   def sort
-    roster = roster.sort_by {|k, v| k}
+    roster = roster.sort_by { |k, v| k}
     roster.each do |grade, name|
       binding.pry
     end
