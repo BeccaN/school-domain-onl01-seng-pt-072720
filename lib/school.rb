@@ -25,12 +25,7 @@ class School
   def sort
     roster = roster.sort_by { |k, v| k }
     roster.each do |grade, name|
-      binding.pry
+      #sort names in each grade
     end
   end 
 end   
-
-
-# metrics = {"sitea.com" => 745, "siteb.com" => 9, "sitec.com" => 10 }
-# metrics.sort_by {|_key, value| value}
-#   # ==> [["siteb.com", 9], ["sitec.com", 10], ["sitea.com", 745]]
