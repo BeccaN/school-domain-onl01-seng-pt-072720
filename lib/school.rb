@@ -1,3 +1,5 @@
+require 'pry' 
+
 class School
   attr_accessor :school
   attr_reader :roster
