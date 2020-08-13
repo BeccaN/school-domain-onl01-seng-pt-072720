@@ -23,6 +23,12 @@ class School
   end   
   
   def sort
-    roster.sort_by  
+    roster = roster.sort_by {|k, v| k}
+    
   end 
 end   
+
+
+metrics = {"sitea.com" => 745, "siteb.com" => 9, "sitec.com" => 10 }
+metrics.sort_by {|_key, value| value}
+  # ==> [["siteb.com", 9], ["sitec.com", 10], ["sitea.com", 745]]
